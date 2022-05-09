@@ -8,4 +8,5 @@ html {
 }
 body {
 	font-family: "Nunito", "Arial", "Helvetica", sans-serif;
+	overflow-x: visible;
 }

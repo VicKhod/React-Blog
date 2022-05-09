@@ -14,13 +14,13 @@ class Api {
             }
         }).then(responseHandler);
     }
-    // getSinglePost(id) {
-    //     return fetch(`${this.path}/posts/${id}`, {
-    //         headers: {
-    //             "authorization": `Bearer ${this.token}`
-    //         }
-    //     }).then(responseHandler);
-    // }
+    getSinglePost(postId) {
+        return fetch(`${this.path}/posts/${postId}`, {
+            headers: {
+                "authorization": `Bearer ${this.token}`
+            }
+        }).then(responseHandler);
+    }
 
 }
 

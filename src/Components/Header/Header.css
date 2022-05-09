@@ -4,5 +4,9 @@ header {
     justify-content: start;
     align-items: center;
     gap: 90px;
-    padding: 60px 40px 60px 40px;
+    padding: 60px 40px 50px 40px;
+    background-color: #fff;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 255, .2);
+    position: sticky;
+    top: 0;
 }

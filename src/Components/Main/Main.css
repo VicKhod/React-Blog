@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 .card__container {
+    padding-top: 12px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
