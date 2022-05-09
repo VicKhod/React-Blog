@@ -1,0 +1,31 @@
+
+.card__content {
+    height: 300px;
+    width: 450px;
+    border: 1px solid rgb(62, 62, 62);
+    border-radius: 2px;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+    padding: 10px;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color:rgba(0, 0, 0);
+    cursor: pointer;
+}
+.card__img {
+    padding: 15px;
+    width: 100%;
+    object-fit: cover;    
+}
+/* .card__date{
+    
+
+} */
+.card__title {
+    font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 900;
+    margin-top: 15px;
+    cursor: pointer;
+}
