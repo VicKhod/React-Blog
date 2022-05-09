@@ -1,17 +1,18 @@
 import React, {useState} from "react";
+import { Routes, Route } from "react-router-dom";
 import Header from "./Components/Header/Header";
 import Main from "./Components/Main/Main";
 import Footer from "./Components/Footer/Footer";
 
 
 export default () => {
-    const [searchText, changeText] = useState("float");
-
+    const [searchText, changeText] = useState("");
 
     return <>
         <Header searchText={searchText} changeText={changeText}/>
-        {searchText && <div>You are searching for {searchText}</div>}
-        <Main search={searchText}/>
+        <Routes>
+            <Route path="/" element={<Main search={searchText}/>}/>
+        </Routes>
         <Footer/>
     </>
 }
