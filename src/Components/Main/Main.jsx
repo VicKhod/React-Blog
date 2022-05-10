@@ -11,17 +11,19 @@ const Main = ({search}) => {
     useEffect(() => {          
         api.getPostList().then(ans =>{
             getPosts(ans);
-            console.log(ans);
-            updateCards(ans.filter(el => el.title.toLowerCase().includes(search.toLowerCase())));
         })
     }, []);
+
+    useEffect(() => {
+            updateCards(posts.filter(el => el.title.toLowerCase().includes(search.toLowerCase())));
+    }, [posts, search]);
 
     return(
         <>
             {search && <div className='search__item'>По запросу <strong>{search}</strong> найдено {cards.length} постов</div>}
             <div className="card__container">
                 {cards.map((post) => 
-                    <Link to={"/post/ + post._id"} key={post._id}>
+                    <Link to={"/post/" + post._id} key={post._id}>
                         <Card key={post._id} data={{...post}}/>
                     </Link>  
                 )}

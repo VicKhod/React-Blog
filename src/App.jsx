@@ -14,7 +14,7 @@ export default () => {
         <Header searchText={searchText} changeText={changeText}/>
         <Routes>
             <Route path="/" element={<Main search={searchText}/>}/>
-            <Route path="/post/:postId" element={<Post/>}/>
+            <Route path="/post/:id" element={<Post/>}/>
         </Routes>
         <Footer/>
     </>

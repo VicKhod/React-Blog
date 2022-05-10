@@ -14,8 +14,8 @@ class Api {
             }
         }).then(responseHandler);
     }
-    getSinglePost(postId) {
-        return fetch(`${this.path}/posts/${postId}`, {
+    getSinglePost(id) {
+        return fetch(`${this.path}/posts/${id}`, {
             headers: {
                 "authorization": `Bearer ${this.token}`
             }
